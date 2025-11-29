@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dns jumper</title>
+
+    <!-- tailwind output -->
+    <link rel="stylesheet" href="./style/output.css" />
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- anim -->
+    <link rel="stylesheet" href="./style/anim.css" />
+  </head>
+  <body
+    class="bg-stone-900 animate__animated animate__faster animate__fadeInRight overflow-hidden"
+  >
+    <div class="h-[500px]">
+      <button
+        id="btnSetDns"
+        class="hidden fa fa-power-off text-red-900 absolute top-[50%] left-[50%] text-5xl cursor-pointer"
+        style="transform: translate(-50%, -50%)"
+      ></button>
+
+      <select
+        dir="rtl"
+        name=""
+        id="selectDns"
+        class="absolute top-[50%] left-[50%] border p-1 rounded-md focus:border-blue-900 bg-stone-400"
+        style="transform: translate(-50%, 210%)"
+      ></select>
+    </div>
+    <div
+      dir="rtl"
+      class="absolute flex items-center bg-stone-500 px-2.5 py-2 rounded-md"
+      style="left: 50%; transform: translateX(-50%); bottom: 20px"
+    >
+      <div class="bg-stone-900 p-2.5 ml-5">
+        <a
+          href="./index.html"
+          class="fa fa-power-off text-[20px] text-white"
+        ></a>
+      </div>
+      <div class="p-2.5">
+        <a href="./team.html" class="fa fa-users text-[20px]"></a>
+      </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>

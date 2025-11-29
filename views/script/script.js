@@ -1,0 +1,234 @@
+const dns = [
+  {
+    name: "Shecan",
+    nameFa: "شکن",
+    type: "Iranian",
+    primary: "178.22.122.100",
+    secondary: "185.51.200.2",
+  },
+  {
+    name: "Google Public DNS",
+    nameFa: "گوگل",
+    type: "International",
+    primary: "8.8.8.8",
+    secondary: "8.8.4.4",
+  },
+  {
+    name: "Cloudflare DNS",
+    nameFa: "کلادفلر",
+    type: "International",
+    primary: "1.1.1.1",
+    secondary: "1.0.0.1",
+  },
+  {
+    name: "OpenDNS",
+    nameFa: "اوپن‌دی‌ان‌اس",
+    type: "International",
+    primary: "208.67.222.222",
+    secondary: "208.67.220.220",
+  },
+  {
+    name: "Quad9",
+    nameFa: "کواد ۹",
+    type: "International",
+    primary: "9.9.9.9",
+    secondary: "149.112.112.112",
+  },
+  {
+    name: "CleanBrowsing Family",
+    nameFa: "کلین‌بروزینگ فمیلی",
+    type: "International",
+    primary: "185.228.168.168",
+    secondary: "185.228.169.168",
+  },
+  {
+    name: "AdGuard DNS",
+    nameFa: "ادگارد",
+    type: "International",
+    primary: "94.140.14.14",
+    secondary: "94.140.15.15",
+  },
+  {
+    name: "Yandex DNS",
+    nameFa: "یاندکس",
+    type: "International",
+    primary: "77.88.8.8",
+    secondary: "77.88.8.1",
+  },
+  {
+    name: "Iran DNS 1",
+    nameFa: "دی‌ان‌اس ایران ۱",
+    type: "Iranian",
+    primary: "185.51.200.2",
+    secondary: "185.51.200.3",
+  },
+  {
+    name: "Iran DNS 2",
+    nameFa: "دی‌ان‌اس ایران ۲",
+    type: "Iranian",
+    primary: "185.51.200.10",
+    secondary: "185.51.200.11",
+  },
+  {
+    name: "ParsOnline",
+    nameFa: "پارس‌آنلاین",
+    type: "Iranian",
+    primary: "62.193.96.1",
+    secondary: "62.193.96.2",
+  },
+  {
+    name: "HiWeb",
+    nameFa: "های‌وب",
+    type: "Iranian",
+    primary: "5.145.99.1",
+    secondary: "5.145.99.2",
+  },
+  {
+    name: "Asiatech",
+    nameFa: "آسیاتک",
+    type: "Iranian",
+    primary: "185.51.200.2",
+    secondary: "185.51.200.3",
+  },
+  {
+    name: "Shatel",
+    nameFa: "شاتل",
+    type: "Iranian",
+    primary: "178.22.122.100",
+    secondary: "178.22.122.101",
+  },
+  {
+    name: "Mobinnet",
+    nameFa: "مبین‌نت",
+    type: "Iranian",
+    primary: "185.51.200.2",
+    secondary: "185.51.200.3",
+  },
+  {
+    name: "Afranet",
+    nameFa: "آفرانت",
+    type: "Iranian",
+    primary: "62.193.96.1",
+    secondary: "62.193.96.2",
+  },
+  {
+    name: "FastDNS",
+    nameFa: "فست‌دی‌ان‌اس",
+    type: "Iranian",
+    primary: "185.51.200.4",
+    secondary: "185.51.200.5",
+  },
+  {
+    name: "Level3 DNS",
+    nameFa: "لول۳",
+    type: "International",
+    primary: "209.244.0.3",
+    secondary: "209.244.0.4",
+  },
+  {
+    name: "Comodo Secure DNS",
+    nameFa: "کومودو",
+    type: "International",
+    primary: "8.26.56.26",
+    secondary: "8.20.247.20",
+  },
+  {
+    name: "Norton ConnectSafe",
+    nameFa: "نورتون",
+    type: "International",
+    primary: "199.85.126.10",
+    secondary: "199.85.127.10",
+  },
+  {
+    name: "Verisign DNS",
+    nameFa: "وری‌ساین",
+    type: "International",
+    primary: "64.6.64.6",
+    secondary: "64.6.65.6",
+  },
+  {
+    name: "OpenNIC",
+    nameFa: "اوپن‌نیک",
+    type: "International",
+    primary: "107.150.40.234",
+    secondary: "50.116.23.211",
+  },
+  {
+    name: "Alternate DNS",
+    nameFa: "آلترنیت",
+    type: "International",
+    primary: "198.101.242.72",
+    secondary: "23.253.163.53",
+  },
+  {
+    name: "Yandex Safe DNS",
+    nameFa: "یاندکس سیف",
+    type: "International",
+    primary: "77.88.8.88",
+    secondary: "77.88.8.2",
+  },
+  {
+    name: "SafeDNS",
+    nameFa: "سیف‌دی‌ان‌اس",
+    type: "International",
+    primary: "195.46.39.39",
+    secondary: "195.46.39.40",
+  },
+  {
+    name: "CleanBrowsing Adult",
+    nameFa: "کلین‌بروزینگ بزرگسال",
+    type: "International",
+    primary: "185.228.168.10",
+    secondary: "185.228.169.11",
+  },
+  {
+    name: "OpenDNS FamilyShield",
+    nameFa: "اوپن‌دی‌ان‌اس فمیلی",
+    type: "International",
+    primary: "208.67.222.123",
+    secondary: "208.67.220.123",
+  },
+  {
+    name: "NextDNS",
+    nameFa: "نکست‌دی‌ان‌اس",
+    type: "International",
+    primary: "45.90.28.0",
+    secondary: "45.90.30.0",
+  },
+  {
+    name: "AdGuard Family",
+    nameFa: "ادگارد فمیلی",
+    type: "International",
+    primary: "94.140.14.15",
+    secondary: "94.140.15.16",
+  },
+];
+
+const selectDns = document.getElementById("selectDns"),
+  btnSetDns = document.getElementById("btnSetDns");
+
+dns.forEach((d) => {
+  selectDns.insertAdjacentHTML(
+    "beforeend",
+    `
+    <option value="${d.name}">${d.nameFa}</option>
+    
+    `
+  );
+});
+
+btnSetDns.addEventListener("click", async () => {
+  btnSetDns.classList.remove("fa");
+  btnSetDns.classList.remove("fa-power-off");
+  btnSetDns.innerHTML = "<div class='loader'></div>";
+
+  const dnsSelected = dns.filter((d) => {
+    if (d.name == selectDns.value) {
+      return d;
+    }
+  });
+  const result = await window.myApi.setDns(dnsSelected[0]);
+  btnSetDns.classList.add("fa");
+  btnSetDns.classList.add("fa-power-off");
+  btnSetDns.innerHTML = "";
+});

@@ -2,5 +2,5 @@ powershell -Command "Get-NetAdapter | Where-Object {$_.Status -eq 'Up'} | Select
 --- wifi 2
 
 
-netsh interface ipv4 set dns name={adapterName}
-netsh interface ipv4 add dns name={adapterName}
+netsh interface ipv4 set dns  name={adapterName} static
+netsh interface ipv4 add dns name={adapterName} index=2

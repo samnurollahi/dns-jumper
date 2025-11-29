@@ -7,9 +7,12 @@
   "type": "commonjs",
   "main": "app.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "tailwind:setup": "npx @tailwindcss/cli -i ./views/style/input.css -o ./views/style/output.css --watch"
   },
   "dependencies": {
-    "electron": "^39.2.4"
+    "@tailwindcss/cli": "^4.1.17",
+    "electron": "^39.2.4",
+    "tailwindcss": "^4.1.17"
   }
 }
